@@ -1,31 +1,69 @@
+/* Base styles */
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #f8f9fa; /* Soft off-white, easier on the eyes */
   color: #333333;
   font-family: Arial, sans-serif;
   max-width: 800px;
-  margin: 2 auto;
-  padding: 5px;
+  margin: 30px auto; /* Properly centers the webpage container */
+  padding: 20px;
 }
 
+/* Titles */
 h1 {
   color: #0095e5;
+  margin-top: 20px;
 }
 
-a {
+h3 {
   color: #0070ad;
+  margin-top: 30px;
 }
+
+/* Simple Navigation Styling */
+nav.navbar {
+  background-color: #0070ad;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Table styling */
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
 th, td {
-  border: 5px solid #08080800;
-  padding: 8px 12px;
+  border: 1px solid #dddddd; /* Thin, visible gray borders */
+  padding: 12px;
   text-align: left;
 }
 
 th {
-  background-color: #0070ad;
+  background-color: #0095e5;
   color: #ffffff;
+}
+
+/* Optional fun button trick */
+.btn {
+  display: inline-block;
+  background-color: #0095e5;
+  color: white !important;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
 }
